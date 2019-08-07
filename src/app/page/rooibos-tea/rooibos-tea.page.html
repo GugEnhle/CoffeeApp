@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title color="dark" class>Rooibos Shake</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="medium">
+<ion-card>
+<ion-grid>
+    <ion-row>
+    <ion-col>
+    <img src="assets/Rooibos.png" alt="Trulli" width="150" height="150">
+    <h4>Price:&nbsp;R{{price}}</h4>
+   </ion-col>
+    </ion-row>
+    </ion-grid>
+    <ion-col>
+    <h4 class>Extras</h4>
+    <h4>
+    <ion-button color="dark" (click)="onPriceAdd1()">Add hemp seed</ion-button>
+    <font size="3"><li>Hemp seed:R2</li></font>
+    </h4>
+    <h4>
+    <ion-button color="dark" (click)="onPriceAdd2()">Add Vanilla</ion-button>
+    <font size="3"><li>Vanilla:R2</li></font>
+    </h4>
+    <h4>
+    <ion-button color="dark" (click)="onPriceAdd3()">Add Coconut Oil</ion-button>
+    <font size="3"><li>Coconut oil:R4</li></font>
+    </h4>
+    <h4>
+    <ion-button color="dark" (click)="onPriceAdd4()">Add Vanilla bean pod</ion-button>
+    <font size="3"><li>Vanilla bean pod:R2</li></font>
+    </h4>
+    </ion-col>
+    </ion-card>
+    <h4 class>Total:&nbsp;R{{total}}</h4>
+    <div class="button">
+      <ion-button float-right color="dark" (click)="onprint()">Print</ion-button>
+        <ion-button float-left color="dark" (click)="onBack()">Back</ion-button>
+    </div>
+</ion-content>
